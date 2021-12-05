@@ -7,7 +7,7 @@
 .albume-contaier{
     width: 100%;
     height: 80vh;
-    background:linear-gradient(#000000c2,#000000c2),url('http://jellydemos.com/html/musize/assets/images/resources/backgrounds/bg1.jpg');
+    background:linear-gradient(#000000c2,#000000c2),url('images/bg1.jpg');
     background-position: center;
     background-attachment: fixed;
 }
