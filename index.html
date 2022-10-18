@@ -13,18 +13,18 @@
 
 <body>
     <header class="header-container">
-        <nav class="flex items-center justify-between px-16 text-white py-4">
+        <nav class="flex  items-center justify-between md:px-16 text-white py-4">
             <a href="#">
                 <img class="w-32" src="images/logo-black.png" alt="">
             </a>
-            <ul class="flex">
+            <ul class="flex invisible md:visible">
                 <li><a href="#" class="mx-5">Home</a></li>
                 <li><a href="#" class="mx-5">Music Blog</a></li>
                 <li><a href="#" class="mx-5">Album</a></li>
                 <li><a href="#" class="mx-5">Pages</a></li>
             </ul>
         </nav>
-        <section class="p-20 text-white">
+        <section class="md:p-20 text-white">
             <div class="space-y-6">
                 <h2 class="uppercase text-6xl font-bold tracking-wide">Best Artist <br />of ther year</h2>
                 <p class="w-3/4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis iusto cupiditate
@@ -39,8 +39,8 @@
         </section>
     </header>
     <main>
-        <section class="flex items-center my-12">
-            <div class="px-10 w-3/4 space-y-6">
+        <section class="md:flex container mx-auto items-center my-12">
+            <div class=" w-3/4 space-y-6">
                 <h1 class="text-4xl font-semibold">Artist Bio</h1>
                 <h2 class="text-3xl font-normal">“If I can play one note and make you cry, then that's better than those
                     fancy dancers playing twenty
@@ -59,18 +59,23 @@
                 </ul>
             </div>
             <div>
-                <img class="w-full" src="images/img1.jpg" alt="">
+                <img class="w-full skew-y-6 artist-img" src="images/img1.jpg" alt="">
             </div>
         </section>
         <!-----------------------new album-------------------->
-        <section class="flex justify-center items-center text-center albume-contaier">
+        <section class="flex relative justify-center items-center text-center albume-contaier">
             <div>
-                <a href="https://youtu.be/0IU705W_kIA" class="text-2xl">
+                <button class="text-2xl btn">
                     <div class="border rounded-full w-24 h-24 flex items-center justify-center text-white mx-auto">
                         <i class="fas fa-play"></i>
                     </div>
-                </a>
+                </button>
                 <h2 class="text-4xl mt-2 text-white tracking-wide">New Music Video</h2>
+            </div>
+            <div class="w-2/4 h-4/5 absolute hidden video">
+                <video controls class="w-full h-full" poster="videos/1.png">
+                    <source src="videos/sky.mkv" />
+                </video>
             </div>
         </section>
         <!------------------------Collect albume----------------------->
@@ -78,9 +83,9 @@
             <h2 class="text-4xl text-center my-6">Explore Latest <span class="text-red-400">Music<br />
                     Collection</span>
                 Now</h2>
-            <div class="grid grid-cols-4 gap-4">
-                <div class="space-y-4">
-                    <img src="images/1.jpg" alt="">
+            <div class="grid md:grid-cols-4 gap-4">
+                <div class="space-y-3">
+                    <img class="rounded" src="images/1.jpg" alt="">
                     <h2 class="text-2xl font-semibold">Dark Horses</h2>
                     <p class="text-1xl font-semibold">(Menty Group)</p>
                     <ul class="flex justify-center">
@@ -92,8 +97,8 @@
                     </ul>
                     <h2 class="text-2xl text-red-400 font-bold">Rs. 650.00</h2>
                 </div>
-                <div class="space-y-4">
-                    <img src="images/2.jpg" alt="">
+                <div class="space-y-3">
+                    <img class="rounded" src="images/2.jpg" alt="">
                     <h2 class="text-2xl font-semibold">Divas Charms</h2>
                     <p class="text-1xl font-semibold">(Ropo Group)</p>
                     <ul class="flex justify-center">
@@ -105,8 +110,8 @@
                     </ul>
                     <h2 class="text-2xl text-red-400 font-bold">Rs. 650.00</h2>
                 </div>
-                <div class="space-y-4">
-                    <img src="images/3.jpg" alt="">
+                <div class="space-y-3">
+                    <img class="rounded" src="images/3.jpg" alt="">
                     <h2 class="text-2xl font-semibold">Little Wounder</h2>
                     <p class="text-1xl font-semibold">(Pink Floyd)</p>
                     <ul class="flex justify-center">
@@ -118,8 +123,8 @@
                     </ul>
                     <h2 class="text-2xl text-red-400 font-bold">Rs. 650.00</h2>
                 </div>
-                <div class="space-y-4">
-                    <img src="images/4.jpg" alt="">
+                <div class="space-y-3">
+                    <img class="rounded" src="images/4.jpg" alt="">
                     <h2 class="text-2xl font-semibold">New Empires</h2>
                     <p class="text-1xl font-semibold">(Pink Floyd)</p>
                     <ul class="flex justify-center">
@@ -158,6 +163,9 @@
             <li><a href="#" class="mr-8 text-2xl"><i class="fab fa-facebook-f"></i></a></li>
         </ul>
     </footer>
+
+
+    <script src="js/app.js"></script>
 </body>
 
 </html>
